@@ -1,5 +1,5 @@
 {% set name = "simpleeval" %}
-{% set version = "0.9.8" %}
+{% set version = "0.9.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 85e2ce60869790053fa4d6cacea05a38228c6678ffadfa5db59aa2f4e4e2df01
+  sha256: 692055488c2864637f6c2edb5fa48175978a2a07318009e7cf03c9790ca17bea
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
