@@ -1,5 +1,5 @@
 {% set name = "simpleeval" %}
-{% set version = "0.9.11" %}
+{% set version = "0.9.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5c2012f724cd6ba2b8b5d0624a6d073ce778028e38683eb9afc4a5c0c95c35fa
+  sha256: 3e0be507486d4e21cf9d08847c7e57dd61a1603950399985f7c5a0be7fd33e36
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENCE
-  summary: 'A simple, safe single expression evaluator library.'
+  summary: A simple, safe single expression evaluator library.
   description: |
     A quick single file library for easily adding evaluatable expressions
     into python projects, or if you want to allow simple formulae in a
