@@ -153,5 +153,6 @@ Feedstock Maintainers
 =====================
 
 * [@bgruening](https://github.com/bgruening/)
+* [@dbast](https://github.com/dbast/)
 * [@mtekman](https://github.com/mtekman/)
 
