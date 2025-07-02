@@ -6,8 +6,7 @@ package:
   version: {{ version }}
 
 source:
-
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 67bbf246040ac3b57c29cf048657b9cf31d4e7b9d6659684daa08ca8f1e45829
 
 build:
@@ -19,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - hatchling
   run:
     - python >={{ python_min }}
 
