@@ -1,16 +1,17 @@
 {% set name = "simpleeval" %}
-{% set version = "0.9.13" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4a30f9cc01825fe4c719c785e3762623e350c4840d5e6855c2a8496baaa65fac
+
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 67bbf246040ac3b57c29cf048657b9cf31d4e7b9d6659684daa08ca8f1e45829
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
