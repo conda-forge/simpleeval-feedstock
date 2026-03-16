@@ -1,5 +1,5 @@
 {% set name = "simpleeval" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 67bbf246040ac3b57c29cf048657b9cf31d4e7b9d6659684daa08ca8f1e45829
+  sha256: 1e10e5f9fec597814444e20c0892ed15162fa214c8a88f434b5b077cf2fef85b
 
 build:
   number: 0
